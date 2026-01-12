@@ -527,15 +527,14 @@ a {
 }
 
 .social-icon {
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease;
-    filter: brightness(0) invert(1);
+    font-size: 32px;
+    color: var(--white);
+    transition: all 0.3s ease;
 }
 
 .social-icon:hover {
-    transform: scale(1.1);
-    filter: brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(10deg);
+    transform: scale(1.15);
+    color: var(--primary-yellow);
 }
 
 /* Responsive Design */
