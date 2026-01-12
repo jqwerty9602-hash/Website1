@@ -3,20 +3,236 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Swift Logistics - Global Shipping Solutions</title>
+    <title>Express Logistics - Global Shipping Solutions</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="hero">
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">Moving Your World Forward</h1>
-            <p class="hero-subtitle">Reliable freight and logistics solutions connecting businesses across the globe with speed and precision.</p>
-            <div class="hero-actions">
-                <a href="#" class="btn btn-primary">Get a Quote</a>
-                <a href="#" class="btn btn-secondary">Track Shipment</a>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar">
+        <div class="navbar__top">
+            <div class="container">
+                <div class="navbar__top-content">
+                    <div class="navbar__search">
+                        <input type="search" class="navbar__search-input" placeholder="Search..." aria-label="Search">
+                        <button type="submit" class="navbar__search-btn" aria-label="Submit search">🔍</button>
+                    </div>
+                    <div class="navbar__actions">
+                        <a href="#login" class="btn-secondary">Login</a>
+                        <a href="#quote" class="btn-primary">Get Quote</a>
+                    </div>
+                </div>
             </div>
         </div>
-    </header>
+        <div class="navbar__bottom">
+            <div class="container">
+                <div class="navbar__bottom-content">
+                    <div class="navbar__logo">
+                        <span class="logo-text">ExpressLog</span>
+                    </div>
+                    <ul class="navbar__menu">
+                        <li><a href="#tracking">Tracking</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#solutions">Solutions</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <img src="assets/images/banner-homepage.png" alt="Global logistics background" class="hero__image">
+            <div class="hero__overlay"></div>
+            <div class="container">
+                <div class="hero__content">
+                    <h1 class="hero__title">Excellence in Global Shipping</h1>
+                    <p class="hero__subtitle">Fast, reliable, and secure delivery solutions for your business</p>
+                    <a href="#services" class="btn-cta">Explore Services</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Shipment Tracking Form -->
+        <section class="tracking-section">
+            <div class="container">
+                <div class="tracking-card">
+                    <h2 class="tracking-card__title">Track Your Shipment</h2>
+                    <form class="tracking-form">
+                        <input type="text" class="tracking-input" placeholder="Enter tracking number" aria-label="Tracking number">
+                        <button type="submit" class="btn-track">Track</button>
+                    </form>
+                    <div class="tracking-links">
+                        <a href="#bulk">Track Multiple</a>
+                        <a href="#advanced">Advanced Tracking</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Cards / Features Grid -->
+        <section class="services-section" id="services">
+            <div class="container">
+                <h2 class="section-title">Our Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="service-card__icon">📦</div>
+                        <h3 class="service-card__title">Express Shipping</h3>
+                        <p class="service-card__text">Fastest delivery options for urgent shipments worldwide</p>
+                        <a href="#express" class="service-card__link">Learn More →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">🌍</div>
+                        <h3 class="service-card__title">International Freight</h3>
+                        <p class="service-card__text">Global logistics solutions for businesses of all sizes</p>
+                        <a href="#freight" class="service-card__link">Learn More →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">🚚</div>
+                        <h3 class="service-card__title">Ground Transport</h3>
+                        <p class="service-card__text">Reliable domestic shipping with real-time tracking</p>
+                        <a href="#ground" class="service-card__link">Learn More →</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-card__icon">📋</div>
+                        <h3 class="service-card__title">Supply Chain</h3>
+                        <p class="service-card__text">End-to-end logistics management and warehousing</p>
+                        <a href="#supply" class="service-card__link">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Promotional Content Section -->
+        <section class="promo-section">
+            <div class="container">
+                <div class="promo-grid">
+                    <div class="promo-card promo-card--large">
+                        <img src="assets/images/human-sign-packages.jpg" alt="Package handling service" class="promo-card__image">
+                        <div class="promo-card__content">
+                            <span class="promo-card__label">Special Offer</span>
+                            <h3 class="promo-card__title">Save 20% on International Shipping</h3>
+                            <p class="promo-card__text">Limited time offer for new business customers</p>
+                            <a href="#offer" class="btn-outline">Claim Offer</a>
+                        </div>
+                    </div>
+                    <div class="promo-card">
+                        <img src="assets/images/stuff-warehouse.jpg" alt="Warehouse storage" class="promo-card__image">
+                        <div class="promo-card__content">
+                            <h3 class="promo-card__title">E-Commerce Solutions</h3>
+                            <p class="promo-card__text">Seamless integration for online retailers</p>
+                            <a href="#ecommerce" class="btn-outline">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="promo-card">
+                        <div class="promo-card__content">
+                            <h3 class="promo-card__title">Same-Day Delivery</h3>
+                            <p class="promo-card__text">Now available in major metropolitan areas</p>
+                            <a href="#sameday" class="btn-outline">Check Coverage</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust / Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <h2 class="section-title section-title--light">Trusted Worldwide</h2>
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-card__number">220+</div>
+                        <div class="stat-card__label">Countries & Territories</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__number">1.5B</div>
+                        <div class="stat-card__label">Shipments Annually</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__number">400K+</div>
+                        <div class="stat-card__label">Team Members</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-card__number">99.8%</div>
+                        <div class="stat-card__label">On-Time Delivery</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer with Multi-Column Links -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h4 class="footer-column__title">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="#express">Express Shipping</a></li>
+                        <li><a href="#freight">Freight Services</a></li>
+                        <li><a href="#ecommerce">E-Commerce</a></li>
+                        <li><a href="#supply">Supply Chain</a></li>
+                        <li><a href="#warehousing">Warehousing</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column__title">Solutions</h4>
+                    <ul class="footer-links">
+                        <li><a href="#business">For Business</a></li>
+                        <li><a href="#enterprise">Enterprise</a></li>
+                        <li><a href="#retail">Retail</a></li>
+                        <li><a href="#healthcare">Healthcare</a></li>
+                        <li><a href="#tech">Technology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column__title">Support</h4>
+                    <ul class="footer-links">
+                        <li><a href="#help">Help Center</a></li>
+                        <li><a href="#tracking">Track Shipment</a></li>
+                        <li><a href="#rates">Rates & Transit</a></li>
+                        <li><a href="#customs">Customs Info</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column__title">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#news">News</a></li>
+                        <li><a href="#sustainability">Sustainability</a></li>
+                        <li><a href="#investors">Investors</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 class="footer-column__title">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#partners">Partners</a></li>
+                    </ul>
+                    <div class="footer-social">
+                        <a href="#facebook" aria-label="Facebook">
+                            <img src="assets/images/fb-logo.svg" alt="Facebook" class="social-icon">
+                        </a>
+                        <a href="#instagram" aria-label="Instagram">
+                            <img src="assets/images/ig-logo.svg" alt="Instagram" class="social-icon">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 ExpressLog. All rights reserved.</p>
+                <div class="footer-legal">
+                    <a href="#privacy">Privacy Policy</a>
+                    <a href="#terms">Terms of Service</a>
+                    <a href="#cookies">Cookie Settings</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
