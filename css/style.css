@@ -71,6 +71,12 @@ a {
     color: var(--primary-red);
 }
 
+.navbar__logo .logo-image {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
 .navbar__menu {
     display: flex;
     list-style: none;
